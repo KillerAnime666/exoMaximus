@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario Exo-Maximus</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!---<link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">-->
+</head>
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand" style="background-color: #C6E0F5;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Exo-Maximus</a>
+                <a class="nav-link" href="recibos.html">Recibos</a>
+                <a class="nav-link" href="index.html">
+                    <button type="button" class="btn btn-danger">Log Out</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="container" id="datos">
+        <form id="task-form">
+            <div class="form-group">
+                <label for="producto" class="letras">Producto</label>
+                <input class="form-control" type="text" id="task-title">
+            </div>
+            <div class="form-group">
+                <label for="cantidad" class="letras">Cantidad</label>
+                <input class="form-control" type="number" id="task-quantity">
+            </div>
+            <div class="form-group">
+                <label for="precio" class="letras">Precio Unitario</label>
+                <input class="form-control" type="number" id="task-price">
+            </div>
+            <div class="form-group">
+                <label for="fecha" class="letras">Fecha de Compra</label>
+                <input class="form-control" type="text" placeholder="dd/mm/aaaa" id="task-date">
+            </div>
+    
+            <button class="btn btn-primary" id="btn-task-save">Guardar</button>
+        </form>
+    </div>
+    <div class="container">
+        <h2 class="text-center mt-5">Inventario</h2>
+        <table class="table mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">PRODUCTO</th>
+                    <th scope="col">CANTIDAD</th>
+                    <th scope="col">PRECIO UNITARIO</th>
+                    <th scope="col">ACCIONES</th>  
+                </tr> 
+                <p>    
+            </thead>
+            <p></p>
+            <tbody id="task-container">
+               
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.4/dist/sweetalert2.all.min.js"></script> 
+    <script type="module" src="resources/js/script.js"></script>
+
+    
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>   
